@@ -27,7 +27,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'hospital',
 ]
+
+AUTH_USER_MODEL = 'hospital.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -106,9 +109,9 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Authentication
-AUTH_USER_MODEL = 'hospital.User'
-LOGIN_REDIRECT_URL = 'dashboard'
-LOGOUT_REDIRECT_URL = 'login'
+# AUTH_USER_MODEL = 'hospital.User'
+# LOGIN_REDIRECT_URL = 'dashboard'
+# LOGOUT_REDIRECT_URL = 'login'
 
 
 # Default primary key field type
